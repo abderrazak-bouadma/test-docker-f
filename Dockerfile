@@ -6,7 +6,7 @@ RUN apt-get -y install git
 RUN apt-get -y install maven
 RUN mkdir projects
 RUN cd projects
-RUN git clone [PROJECT_URL]
+RUN git clone git@github.com:jpuzzler/test-docker-f.git
 RUN mvn clean install
 RUN mvn spring-boot:run -DskipTests
 
